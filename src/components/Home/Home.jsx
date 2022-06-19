@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import Navigation from '../Navigation/Navigation'
 import './style.css'
 
@@ -28,6 +29,8 @@ const Home = () => {
             </div>
             </div>
         </section>
+
+        <Footer />
     </>
   )
 }
