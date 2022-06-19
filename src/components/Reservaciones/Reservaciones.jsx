@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import { createItem, getItems } from "../../manage";
 import "./style.css";
+import Success from "../Success/Success";
 
 const Reservaciones = () => {
   let fActual = new Date().toISOString().slice(0,16);
@@ -11,12 +12,16 @@ const Reservaciones = () => {
   const [telefono, setTelefono] = useState("");
   const [fecha, setFecha] = useState("");
   const [mensaje, setMensaje] = useState("Sin mensaje");
+
+  let reservado = document.getElementById('reservado');
   
 
   const handleSubmit = (e) => {
     e.preventDefault();
     createItem({ nombre, correo, personas, telefono, fecha, mensaje });
-    //clearInputs();
+    if(nombre && personas && correo && telefono && fecha ){
+      reservado.style.display = 'block';
+    }
   };
   const handleRequest = (e) => {
     e.preventDefault();
@@ -32,7 +37,7 @@ const Reservaciones = () => {
           <div className="col">
             <section className="formulario">
               <h1>Reservar una mesa</h1>
-
+              <Success />
               <form>
                 <div className="form-group">
                   <label htmlFor="nombre">Nombre</label>
