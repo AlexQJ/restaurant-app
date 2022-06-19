@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 import { menu } from '../../data'
 import './style.css'
 
@@ -76,6 +77,8 @@ const Menu = () => {
             </div>
           </div>
         </div>
+
+        <Footer />
     </>
   )
 }

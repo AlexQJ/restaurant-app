@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "../Navigation/Navigation";
+import Footer from '../Footer/Footer'
 import { createItem, getItems } from "../../manage";
 import "./style.css";
 import Success from "../Success/Success";
@@ -35,7 +36,7 @@ const Reservaciones = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <section className="formulario">
+            <section className="formulario my-4">
               <h1>Reservar una mesa</h1>
               <Success />
               <form>
@@ -119,13 +120,15 @@ const Reservaciones = () => {
                   className="btn btn-secondary"
                   onClick={handleRequest}
                 >
-                  Ver reserfvaciones
+                  Ver reservaciones
                 </button>
               </form>
             </section>
           </div>
         </div>
       </div>
+<Footer />
+
     </>
   );
 };
