@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3fe158a.css",
+    "main.js": "/static/js/main.36e4d892.js",
+    "static/media/burger-fondo.jpg": "/static/media/burger-fondo.448e73bfe1731e6a183f.jpg",
+    "index.html": "/index.html",
+    "main.e3fe158a.css.map": "/static/css/main.e3fe158a.css.map",
+    "main.36e4d892.js.map": "/static/js/main.36e4d892.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3fe158a.css",
+    "static/js/main.36e4d892.js"
+  ]
+}
