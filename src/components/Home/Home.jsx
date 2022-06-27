@@ -20,12 +20,6 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium architecto accusantium nostrum minus libero eveniet!</p>
                     </div>
                 </div>
-
-                <div className="col">
-                    <figure>
-
-                    </figure>
-                </div>
             </div>
             </div>
         </section>

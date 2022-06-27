@@ -15,7 +15,7 @@
 .headings {
     margin: 50px auto 20px auto;
     background-color: rgba(37, 37, 37, 0.8);
-    width: 800px;
+    max-width: 800px;
     text-align: center;
     padding: 40px;
     margin-bottom: 0;
@@ -29,7 +29,10 @@
 
 .hero .descripcion {
     background-color: rgba(109, 109, 109, 0.8);
+    margin: auto;
+    max-width: 800px;
     padding: 20px;
+    margin-bottom: 50px;
 }
 .hero p{
     font-size: 30px;
@@ -37,4 +40,26 @@
     font-weight: 100;
 }
 
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 60px;
+    }
 
+    .hero {
+        background-size: 180%;
+        background-position: 100%;
+    }
+
+    .hero .headings,
+    .hero .descripcion {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px){
+    .hero {
+        background-size: 200%;
+        background-position: 100% 100%;
+    }
+}
