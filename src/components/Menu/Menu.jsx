@@ -3,6 +3,7 @@ import Navigation from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
 import { menu } from '../../data'
 import './style.css'
+import Title from '../Title/Title'
 
 const Menu = () => {
 
@@ -24,19 +25,20 @@ const Menu = () => {
               padding: '50px',
               borderRadius: '10px'
             }}>
-              <h4 className='h4 text-center text-light'>Hamburguesas</h4>
+              <Title heading='h4' theme='light' title='Hamburguesas'/>
             
             {
               hamburguesas.map((hamburguesa)=>{
                 return(
                <>
-
                 <div class="card mx-3 my-3 py-3" style={{
-                  width:'18rem'
+                  width:'18rem',
+                  border: '20px double #e2ad07',
+                  background: '#f4ebca'
                 }}>
                   <img class="card-img-top" src={hamburguesa.img} alt={hamburguesa.nombre}/>
                   <div class="card-body">
-                    <h5 class="card-title">{hamburguesa.nombre}</h5>
+                  <Title heading='h5' theme='light' title={hamburguesa.nombre}/>
                     <p class="card-text">{hamburguesa.ingredientes}</p>
                     <p class="h6">${hamburguesa.precio}.00 mxn</p>
                   </div>
@@ -54,19 +56,22 @@ const Menu = () => {
               padding: '50px',
               borderRadius: '10px'
             }}>
-              <h4 className='h4 text-center text-bg-dark'>Bebidas</h4>
+              <Title heading='h4' theme='dark' title='Bebidas'/>
             
             {
               bebidas.map((bebida)=>{
                 return(
                <>
 
-                <div class="card mx-3 my-3 py-3" style={{
-                  width:'18rem'
-                }}>
+                <div className="card mx-3 my-3 py-3" style={{
+                  width:'18rem',
+                  border: '20px double #e2ad07',
+                  background: '#f4ebca'
                   
-                    <h5 class="card-title">{bebida.nombre}</h5>
-                    <p class="h6">${bebida.precio}.00 mxn</p>
+                }}>
+                    <img className="card-img-top" src={bebida.img} alt={bebida.nombre}/>
+                    <Title heading='h5' theme='light' title={bebida.nombre}/>
+                    <p className="h6">${bebida.precio}.00 mxn</p>
                   
                 </div>
                </>

@@ -58,32 +58,38 @@ const menu = [
         {
             id: 'beb1',
             nombre: 'refresco de sabores',
-            precio: 20
+            precio: 20,
+            img: "/images/menu/refrescos.jpg"
         },
         {
             id: 'beb2',
             nombre: 'Limonada natural',
-            precio: 30
+            precio: 30,
+            img: "/images/menu/limonada-natural.jpg"
         },
         {
             id: 'beb3',
             nombre: 'Limonada mineral',
-            precio: 35
+            precio: 35,
+            img: "/images/menu/limonada-mineral.jpg"
         },
         {
             id: 'beb4',
             nombre: 'té helado',
-            precio: 30
+            precio: 30,
+            img: "/images/menu/te-helado.jpg"
         },
         {
             id: 'beb5',
             nombre: 'agua de sabores',
-            precio: 25
+            precio: 25,
+            img: "/images/menu/agua-sabores.jpg"
         },
         {
             id: 'beb6',
             nombre: 'cerveza',
-            precio: 35
+            precio: 35,
+            img: "/images/menu/cervezas.jpg"
         },
     ]
   }
